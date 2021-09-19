@@ -1,0 +1,32 @@
+1. First launch instances anf follow below commands
+
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install apche2 -y
+sudo apt install apche2 -y
+sudo apt install apache2 -y
+sudo systemctl enable apache2
+service apache2 status
+sudo rm -rf /var/www/html/*
+sudo apt-get install ruby -y
+sudo apt-get install wget -y
+cd /home/ubuntu
+wget https://aws-codedeploy-ap-south-1.s3.ap-south-1.amazonaws.com/latest/install
+chmod +x ./install
+sudo ./install auto
+sudo service codedeploy-agent start
+sudo systemctl enable codedeploy-agent
+service codedepl
+
+2. take AMI and create lauch configuration(attache ec2admin ROLE) and create Auto scalling group
+
+3. CReate I AM role
+i. ec2 adminstartoe full access
+ii. code deploye full access
+
+4. create s3 empty bucket(versioning enable)
+
+5. create codedeploy(attach codedeply ROLE)
+getting started 
+
+6. ceate pipeline
